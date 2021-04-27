@@ -345,7 +345,7 @@ const useStyles = makeStyles((theme) => ({
      display : 'flex',
     //  alignItems : 'flex-end'
     justifyContent : 'flex-end',
-    margin : '5px 0px 12px 0px'
+    margin : '5px 0px 12px 0px',
  },
  modify : {
      border : '1px solid lightgray',
@@ -354,6 +354,7 @@ const useStyles = makeStyles((theme) => ({
      margin : '7px 7px 0 0',
      padding : '5px 20px 5px 20px',
      outline : 'none',
+    boxShadow : '1px 1px 3px #CCCCCC',
      cursor : 'pointer',
      "&:hover" : {
         //  color : 'white'

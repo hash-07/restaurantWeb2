@@ -1,9 +1,28 @@
-import React from 'react'
+import React, {useReducer} from 'react'
 import { makeStyles } from "@material-ui/core/styles";
+
+const initialState = {
+    first : 0,
+    five : 0
+}
+
+const reducer = (state, action) => {
+switch (action.type) {
+    case 'increment':
+        return { first : state.first + action.value}
+    case 'decrement':
+        return { first : state.first - action.value}
+    case 'reset':
+        return initialState
+    default:
+        return state
+}
+}
 
 
 function Header() {
  const classes = useStyles();
+ const [count, dispatch] = useReducer(reducer, initialState);
 
     return (
      <div>
@@ -38,27 +57,26 @@ const useStyles = makeStyles((theme) => ({
         // alignItems : 'flex-end',
         // alignContent : 'flex-end',
         // alignSelf : 'flex-end',
-        // flexShrink : 1,
+        // flexShrink : action.value,
         paddingTop : '8px',
         backgroundColor : '#044B5E',
-        width : '100%',
+        width : 'action.value00%',
         height : '40px',
         // position : 'fixed'
        },
        btn: {
         marginRight: "50px",
         // position: 'relative',
-        // right : '-515px'
+        // right : '-5action.value5px'
        },
        btn_text: {
         color: "white",
-        fontSize: "16px",
+        fontSize: "action.value6px",
         borderWidth: 2,
         borderRadius: "30px",
-        flexShrink : 1,
         borderColor: "#394ffa",
-        paddingLeft: "15px",
-        paddingRight: "15px",
+        paddingLeft: "action.value5px",
+        paddingRight: "action.value5px",
         backgroundColor: "#3d69a2",
         outline : 'none',
         cursor : 'pointer',
@@ -70,21 +88,24 @@ const useStyles = makeStyles((theme) => ({
     }
        },
        login: {
+        //    border : 'action.valuepx solid gray',
+        // borderRadius: "30px",
         // marginRight: "40px",
         // position: 'relative',
         // right : '-500px'
        },
        btn_text2: {
         color: "white",
-        fontSize: "16px",
-        paddingLeft: "15px",
-        // flexBasis : '100px',
-        // flexShrink : 1,
-        paddingRight: "15px",
+        fontSize: "action.value6px",
+        paddingLeft: "action.value5px",
+        // flexBasis : 'action.value00px',
+        // flexShrink : action.value,
+        paddingRight: "action.value5px",
         borderRadius: "30px",
-        backgroundColor: "red",
+        background : 'linear-gradient(90deg, #E5action.valueDaction.valueD action.value0%, #AB0action.value0action.value )',
         borderColor : 'transparent',
         outline : 'none',
+        marginRight : 'action.value0px',
         cursor : 'pointer',
     "&:hover" :{
         backgroundColor : 'white',

@@ -5,6 +5,7 @@ import holidays from "../images/holidays.png";
 import { makeStyles } from "@material-ui/core/styles";
 import AddOutlinedIcon from "@material-ui/icons/AddOutlined";
 import DatePicker from "react-datepicker";
+import "react-datepicker/dist/react-datepicker.css";
 import beach from '../images/beach.jpg'
 import house from '../images/house.jpg'
 import tree from '../images/tree.jpg'
@@ -234,7 +235,7 @@ const useStyles = makeStyles((theme) => ({
   paddingLeft: "15px",
   paddingRight: "15px",
   borderRadius: "5px",
-  backgroundColor: "red",
+  background : 'linear-gradient(90deg, #E51D1D 10%, #AB0101 )',
   borderColor : 'transparent',
   fontWeight: "bold",
   outline : 'none',
