@@ -1,0 +1,116 @@
+.header2 {
+ display: flex;
+ justify-content: space-between;
+ margin: 10px 50px 0px 50px;
+}
+.goa {
+ font-size: 27px;
+ font-weight: bold;
+}
+.location {
+    display: flex;
+    align-items: center;
+}
+.divar {
+    font-size: 18px;
+    font-weight: 700;
+    opacity: 0.4;
+}
+#price{
+    font-weight: 500;
+    opacity: 0.4;
+}
+#percent{
+    font-weight: 500;
+    opacity: 0.4;
+}
+#rupees{
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.box2{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-top: 10px;
+}
+
+.middle{
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    z-index: 10;
+    top : 14px;
+    border : 1px solid red;
+    border-radius: 15px;
+    margin: 10px 100px 0px 100px;
+    background-color: white;
+    /* width: fit-content; */
+    /* padding: 0px 20px 0px 20px; */
+    font-size: 18px;
+    font-weight: 700;
+    opacity: 0.6;
+}
+/* #midText{
+    margin-left: -40px;
+} */
+
+.big_box{
+    display: flex;
+    justify-content: space-evenly;
+    border : 1px solid black;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+    margin : 0px 10px 0px 10px;
+    padding : 10px 10px 20px 10px;
+    box-shadow: 3px 3px 5px 1px lightgray;
+    border-color: rgb(182, 180, 180);
+    /* padding-bottom: 20px; */
+    /* margin-top: 20px; */
+    height: auto;
+}
+
+.days { 
+    display: flex;
+    flex-direction: column;
+}
+#day{
+    border: 1px solid black;
+    width: fit-content;
+    border-radius: 5px;
+    margin : 10px;
+    padding : 5px 10px 5px 10px;
+    box-shadow: 5px 5px 5px lightgray;
+    border-color: transparent;
+    opacity: 0.5;
+}
+.flagDay{
+    display: flex;
+    margin-top: 20px;
+
+}
+.flagUp{
+    width: 10;
+	height: 10;
+	border-top: 25px solid transparent;
+	border-left: 40px solid #05937D;
+	border-bottom: 25px solid transparent;
+}
+.flagDown{
+    height: 150px;
+    width: 5px;
+    background-color: gray;
+}
+#mainImg{
+    width: 400px;
+    height: 300px;
+    border-radius: 10px;
+    margin-top: 20px;
+
+}
+.holidayS3{
+    margin-top: 25px;
+
+}

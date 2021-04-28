@@ -2,6 +2,7 @@ import './App.css';
 import Holiday from './components/Holiday';
 import HolidaySearch1 from './components/HolidaySearch1';
 import Header from './components/Header';
+import HolidaySearch3 from './components/HolidaySearch3';
 // import HolidayS1Card from './cards/HolidayS1Card';
 // import HolidayS2Card from './cards/HolidayS2Card';
 // import Holiday2 from './components/Holiday2';
@@ -9,10 +10,11 @@ import Header from './components/Header';
 function App() {
   return (
     <div className="App">
-      <Header/>
+      {/* <Header/> */}
       {/* <Holiday/> */}
       {/* <Holiday2/> */}
       {/* <HolidaySearch1/> */}
+      <HolidaySearch3/>
       {/* <HolidayS1Card/> */}
       {/* <HolidayS2Card/> */}
       
